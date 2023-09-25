@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Selmi Management Consultancy</title>
+		<link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'dist/bundle.css' %}">
+		<link rel="icon" href="{% static 'images/favicon.webp' %}">
+	</head>
+	
+	<body class="bg-grey-200 font-body overflow-x-hidden w-screen">
+		
+		<div>
+			{% include 'base_components/header.html' %}
+            <div class="overflow-x-hidden">{% block content %}{% endblock content %}</div>
+			{% include 'base_components/footer.html' %}
+		</div>
+		
+		{% block scripts %}{% endblock scripts %}
+		<script src="{% static 'dist/bundle.js' %}" defer></script>
+	</body>
+</html>

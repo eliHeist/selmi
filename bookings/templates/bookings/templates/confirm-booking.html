@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELMI</title>
+</head>
+<body>
+    <h1>Booking Confirmation</h1>
+    <p>Thank you for booking with us, <span style="font-weight: bold;">{{ booking.name }}</span>.</p>
+    <h2>Your booking details:</h2>
+    <ul>
+        <li>Name: {{ booking.name }}</li>
+        <li>Contact: {{ booking.contact }}</li>
+        <li>Date: {{ booking.date }}</li>
+    </ul>
+</body>
+</html>

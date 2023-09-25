@@ -1,0 +1,165 @@
+{% extends 'base.html' %} {% load static %}
+
+
+{% block content %}
+
+<!-- banner -->
+<div class="relative px-6 pt-14 lg:px-8 overflow-hidden h-screen grid content-center">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+    </div>
+    <div class="mx-auto max-w-3xl">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <!-- <div
+                class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Announcing our next round of funding. <a href="#" class="font-semibold text-primary"><span
+                        class="absolute inset-0" aria-hidden="true"></span>Read
+                    more
+                    <span aria-hidden="true">&rarr;</span></a>
+            </div> -->
+        </div>
+        <div class="text-center">
+            <h1 class="text-4xl font-black tracking-tight text-primary sm:text-6xl">
+                Where Data Strategy Meets Engineering Excellence
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+                We bridge the realms of data strategy and engineering excellence to pave the way for innovation and
+                transformation. Our mission is to empower businesses with the strategic insights drawn from data,
+                coupled with the precision of engineering mastery.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#"
+                    class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:contrast-125 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Get
+                    started</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-secondary">Learn more <span
+                        aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+        </div>
+    </div>
+</div>
+
+<section class="relative">
+    <img src="{% static 'images/block-steps.png' %}" class="absolute w-full h-full object-cover -z-10">
+    <div class="top-0 left-0 bottom-0 right-0 py-20 bg-primary bg-opacity-90 z-10">
+        <div class="container mx-auto text-center">
+            <h2 class="h2 text-white max-w-2xl mx-auto">Fueling Growth Through Data and Engineering Synergy</h2>
+            <p class="mt-8 text-light text-lg max-w-2xl mx-auto">
+                At SELMI Management Advisory, we're not just a consultancy – we're your partners in progress. With a unique blend of expertise in data consultancy and engineering excellence, we pave the way for businesses to achieve their full potential., we are committed to delivering excellence in every project. Whether it's shaping skylines or deciphering data, we're dedicated to driving growth, innovation, and success for our clients. Welcome to a realm where expertise meets ingenuity, and possibilities are endless.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container mx-auto grid gap-20 my-16">
+        <div class="grid gap-8 lg:grid-cols-2">
+            <figure>
+                <img src="{% static 'images/woman-stats.png' %}" alt="" class="object-cover w-full h-full">
+            </figure>
+            <div class="lg:grid lg:content-center">
+                <h2 class="h3 mb-8">Unlocking Insights, Empowering Progress</h2>
+                <p>
+                    Discover the transformative power of data with SELMI Management Advisory's cutting-edge Data and IT Services. Our expertise goes beyond numbers – we decode the language of data to provide you with actionable insights that drive your business forward. From Business Intelligence to Data Analysis, our solutions are meticulously designed to extract value from your information, enabling informed decisions and strategic growth.
+                    <br><br>
+                    But it doesn't stop there. Our Information Technology solutions encompass software and hardware tailored to your needs, ensuring seamless operations and fortified security. At SELMI, we recognize that the future is digital, and we're here to guide you on your journey to harnessing its potential. Let's navigate the data landscape together, transforming complexity into clarity, and paving the way for innovation and success.
+                </p>
+            </div>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-2">
+            <figure class="lg:order-2">
+                <img src="{% static 'images/construction-tools.png' %}" alt="" class="object-cover w-full h-full">
+            </figure>
+            <div class="lg:grid lg:content-center lg:order-1">
+                <h2 class="h3 mb-8">Building Beyond Boundaries, Crafting Excellence</h2>
+                <p>
+                    Welcome to the realm of Engineering and Construction Services at SELMI Management Advisory, where innovation meets meticulous craftsmanship. Our team of skilled engineers, architects, and construction experts come together to shape the physical world around us. From Civil Engineering that forms the backbone of infrastructure, to Architectural Design that blends aesthetics and functionality, we're committed to engineering solutions that stand the test of time.
+                    <br><br>
+                    Our expertise extends to every facet of construction – from laying the first brick to the finishing touches. We create spaces that inspire, from towering buildings to intricate landscapes. And when it comes to property, we offer not only insights but a comprehensive view, from valuation to enhancement.
+                    <br><br>
+                    Join us in the pursuit of Engineering and Construction Excellence, where every project is a testament to our dedication, precision, and passion for creating a world that's not just built, but beautifully crafted.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16">
+    <div class="container mx-auto">
+        <h2 class="h3 text-center">Contact Us</h2>
+        <p class="text-center my-4 max-w-2xl mx-auto">
+            Hit us up to get more information and insight in our work, the diverse services we offer and how we work together with our clients to manage data, projects and to overcome challenging situations.
+        </p>
+        <ul class="grid gap-8 lg:grid-cols-3 lg:place-items-center lg:mt-8">
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-phone-volume text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-primary font-semibold">Call Us</h3>
+                    <a href="tel:+256789872367">+256 789 872367</a>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-envelope-open-text text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-primary font-semibold">Send Us an Email</h3>
+                    <a href="mailto:contact@selmi.com">contact@selmi.com</a>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-location-dot text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-primary font-semibold">Visit Us</h3>
+                    <a href="#">Namanve Office Towers, 24</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<aside class="py-16 hidden">
+    <div class="container mx-auto">
+        <h2 class="h3 text-center mb-6">Recent Posts</h2>
+        <div class="grid gap-6 lg:grid-cols-3">
+            <article class="p-2 bg-light rounded-md">
+                <h3 class="text-2xl font-bold text-secondary">SELMI OPENS NEW OFFICE</h3>
+                <p class="my-2">2nd August 2023</p>
+                <a href="#" class="text-primary text-lg uppercase font-semibold">
+                    <span>Read More</span>
+                    <i class="fas fa-arrow-right-long ml-2"></i>
+                </a>
+            </article>
+        </div>
+        <div class="mt-8 mx-auto text-center">
+            <a href="#" class="bg-secondary hover:bg-grey-800 text-white font-semibold px-6 py-2 rounded-md">
+                <span>All Posts</span>
+                <i class="fas fa-arrow-right-long ml-2"></i>
+            </a>
+        </div>
+    </div>
+</aside>
+
+
+
+
+
+
+{% endblock content %}

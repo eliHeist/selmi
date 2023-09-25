@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load static tailwind_filters %}
+
+{% block content %}
+
+<main>
+    <div class="container mx-auto pb-16 pt-36">
+        <form class="max-w-3xl mx-auto" method="post">
+            {% csrf_token %}
+            <div class="booking-fields grid gap-4 md:grid-cols-2">
+                {{ form|crispy }}
+            </div>
+            <button type="submit" class="bg-primary text-lighter font-semibold py-2 px-6 mt-8 rounded-md">
+                Confirm Booking
+            </button>
+        </form>
+    </div>
+</main>
+
+{% endblock %}

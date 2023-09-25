@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@mixin tab {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+
+.h2{
+    @apply text-5xl font-extrabold default:text-white;
+}
+
+.h3{
+    @apply text-4xl font-bold default:text-primary;
+}
+
+.container{
+    @apply px-4;
+}
+
+.booking-fields > div:last-of-type{
+    @apply bg-transparent;
+
+    @include tab {
+        grid-column: span 2 / span 2;
+    }
+}
+
+#navbar-sticky{
+    top: -100%;
+    transition: top 200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+#navbar-sticky.show{
+    top: 0;
+}

@@ -1,0 +1,134 @@
+{% extends 'base.html' %} {% load static %}
+
+
+{% block content %}
+
+<section>
+    <div class="container mx-auto px-4 pb-16 pt-36 text-center">
+        <div class="mx-auto max-w-3xl">
+            <h1 class="text-4xl font-black tracking-tight text-primary sm:text-6xl">SELMI Management Advisory</h1>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+                Welcome to SELMI Management Advisory, a multifaceted consultancy committed to delivering excellence across a diverse range of services. Our mission is to empower businesses and individuals by providing innovative solutions that combine expertise, integrity, and a commitment to Godly principles. At SELMI, we don't just solve problems – we pave the way for sustainable growth and progress.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="relative">
+    <img src="{% static 'images/blockchain-technology.jpg' %}" class="absolute w-full h-full object-cover -z-10">
+    <div class="top-0 left-0 bottom-0 right-0 py-28 bg-gradient-to-b from-primary to-[rgba(0, 35, 102, 0.6)] z-10">
+        <div class="container mx-auto text-center">
+            <h2 class="h2 text-white max-w-2xl mx-auto">Our Genesis</h2>
+            <p class="mt-8 text-light text-lg max-w-2xl mx-auto">
+                Born from a vision to redefine consultancy in a rapidly changing world, SELMI Management Advisory emerged with a mission to provide forward-thinking solutions that make a lasting impact. Our enthusiasm, dedication, and expertise set the stage for a future of remarkable achievements.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container mx-auto py-16">
+        <h2 class="h3 text-primary max-w-2xl mx-auto text-center">Our Core Values</h2>
+        <ul class="grid gap-8 mt-8 sm:grid-cols-2 xl:grid-cols-4">
+            <li>
+                <div class="grid gap-3 p-4">
+                    <i class="fas fa-handshake text-6xl text-primary"></i>
+                    <h3 class="text-secondary font-semibold text-xl">Integrity</h3>
+                    <p class="text-grey-700">
+                        We are steadfast in upholding the highest ethical standards. Our foundation is built on honesty, transparency, and a commitment to doing what's right, even when no one is watching.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="grid gap-3 p-4">
+                    <i class="fas fa-clock text-6xl text-primary"></i>
+                    <h3 class="text-secondary font-semibold text-xl">Timeliness</h3>
+                    <p class="text-grey-700">
+                        We recognize that time is a valuable resource. Our dedication to timely delivery and responsiveness reflects our respect for your time and the urgency of your needs.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="grid gap-3 p-4">
+                    <i class="fas fa-group-arrows-rotate text-6xl text-primary"></i>
+                    <h3 class="text-secondary font-semibold text-xl">Creativity</h3>
+                    <p class="text-grey-700">
+                        We believe that every challenge presents an opportunity for creative problem-solving, and we approach each task with fresh perspectives and inventive strategies.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="grid gap-3 p-4">
+                    <i class="fas fa-hands-praying text-6xl text-primary"></i>
+                    <h3 class="text-secondary font-semibold text-xl">Godly Principles</h3>
+                    <p class="text-grey-700">
+                        Our faith shapes our interactions and decisions. We infuse godly principles of excellence, and love  into every aspect of our work, fostering relationships built on mutual respect.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="">
+    <div class="container mx-auto py-16">
+        <div class="grid gap-4 md:grid-cols-2 md:gap-8 lg:gap-12">
+            <img src="{% static 'images/beautiful-landscape-contained-photo-frame.jpg' %}" alt="" class="object-cover w-full h-full aspect-square">
+            <div class="grid md:content-center">
+                <h2 class="h3 text-primary max-w-2xl mb-2">Our Ambition</h2>
+                <p class="text-grey-700">
+                    Our ambition knows no bounds. We aspire to become a guiding light for businesses and individuals seeking transformative solutions. Our hunger for growth is matched only by our eagerness to contribute positively to the industries and communities we serve.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-primary text-light">
+    <div class="container">
+        <h2 class="h3 text-white text-center">Contact Us</h2>
+        <p class="text-center my-4 max-w-2xl mx-auto">
+            Hit us up to get more information and insight in our work, the diverse services we offer and how we work together with our clients to manage data, projects and to overcome challenging situations.
+        </p>
+        <ul class="grid gap-8 lg:grid-cols-3 lg:place-items-center lg:mt-8">
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-phone-volume text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-lighter font-semibold">Call Us</h3>
+                    <a href="tel:+256789872367">+256 789 872367</a>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-envelope-open-text text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-lighter font-semibold">Send Us an Email</h3>
+                    <a href="mailto:contact@selmi.com">contact@selmi.com</a>
+                </div>
+            </li>
+            <li class="flex gap-4">
+                <!-- icon -->
+                <div class="w-20 h-20 rounded-xl grid place-content-center bg-light">
+                    <i class="fas fa-location-dot text-primary text-3xl"></i>
+                </div>
+                <!-- text -->
+                <div class="grid content-center gap-3">
+                    <h3 class="text-lg text-lighter font-semibold">Visit Us</h3>
+                    <a href="#">Namanve Office Towers, 24</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+{% endblock content %}
