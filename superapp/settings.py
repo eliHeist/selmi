@@ -156,15 +156,15 @@ if not DEBUG:
             'HOST': os.getenv("DB_HOST"),
             # 'PORT': os.getenv("DB_PORT"),
             # uncomment below for mysql
-            # "OPTIONS": {
-            #     'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
-            #     'charset': 'utf8mb4',
-            #     "autocommit": True,
-            # }
+            "OPTIONS": {
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES', innodb_strict_mode=1",
+                'charset': 'utf8mb4',
+                "autocommit": True,
+            }
         }
     }
 
 # auth config
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = 'accounts:login'
-AUTH_USER_MODEL = 'accounts.User'
+# LOGIN_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = 'accounts:login'
+# AUTH_USER_MODEL = 'accounts.User'
