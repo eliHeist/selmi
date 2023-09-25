@@ -164,23 +164,7 @@ if not DEBUG:
         }
     }
 
-# azure blob setup
-if not DEBUG:
-    DEFAULT_FILE_STORAGE = 'backend.storage.AzureMediaStorage'
-    STATICFILES_STORAGE = 'backend.storage.AzureStaticStorage'
-    SECRET_KEY = env("SECRET_KEY")
-    AZURE_ACCOUNT_NAME = env("AZURE_ACCOUNT_NAME")
-    AZURE_CONNECTION_STRING = env("AZURE_CONNECTION_STRING")
-    AZURE_ACCOUNT_KEY = env("AZURE_ACCOUNT_KEY")
-    AZURE_URL_EXPIRATION_SECS = int(env("AZURE_URL_EXPIRATION_SECS"))
-    # custom
-    AZURE_MEDIA_CONTAINER = env("AZURE_MEDIA_CONTAINER")
-    AZURE_STATIC_CONTAINER = env("AZURE_STATIC_CONTAINER")
-
 # auth config
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = 'accounts:login'
 AUTH_USER_MODEL = 'accounts.User'
-
-SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-SESSION_SAVE_EVERY_REQUEST = True
