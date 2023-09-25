@@ -32,7 +32,6 @@ INSTALLED_APPS = [
     'crispy_tailwind',
 
     'projects',
-    'accounts',
     'bookings',
     'main',
 ]

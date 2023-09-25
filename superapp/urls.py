@@ -9,7 +9,6 @@ urlpatterns = [
     path('superadmin/', admin.site.urls),
     path('admin/', useradmin.urls),
     path('projects/', include('projects.urls', namespace='projects')),
-    path('accounts/', include('accounts.urls', namespace='accounts')),
     path('bookings/', include('bookings.urls', namespace='bookings')),
     path('', include('main.urls', namespace='main')),
 ]
