@@ -32,7 +32,7 @@ def sendEmails(booking: Booking):
 
     # TODO send email to alert admin
     subject = 'Booking Confirmation'
-    receipeint_list = ['eliyang256@yandex.com']
+    receipeint_list = settings.TO_EMAILS
     template = render_to_string('bookings/templates/notify-booking.html', {'booking': booking})
     send_mail(subject, '', settings.DEFAULT_FROM_EMAIL, receipeint_list, html_message=template)
 
